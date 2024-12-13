@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xl: { "max": '1200px' },
+                    lg: { "max": '992px' },
+                    md: { "max": '768px' },
+                    sm: { "max": '576px' },
+                },
+                extend: {}
+            }
+        }
+    </script>
+    <style>
+        @layer base {
+            @font-face {
+                font-family: "Gandom";
+                src: url(./assets/font/Gandom.woff) format("woff"),
+                    url(./assets/font/Gandom.ttf) format("ttf"),
+                    url(./assets/font/Gandom.eot) format("eot"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.woff) format("woff"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.ttf) format("ttf"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.eot) format("eot");
+            }
+        }
+
+        @layer utilities {
+            .font-gandom {
+                font-family: "Gandom", sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-gandom w-full md:bg-[url('./assets/img/Login.jpg')] md:bg-center">
+
+    <!-- login wrapper -->
+    <div class="flex h-[40rem] w-4/5 mx-auto mt-14 sm:h-[35rem]">
+
+        <!-- login info -->
+        <div class="bg-slate-100 basis-2/4 md:basis-full">
+            <div class="flex flex-col items-start justify-center w-3/4 h-full mx-auto">
+                <h1 class="font-black text-xl sm:text-lg">به سامانه پرداخت عوارض خودرو خوش آمدید!</h1>
+                <label class="font-semibold mt-14 sm:text-sm sm:mt-10">شماره همراه:</label>
+                <input class="w-full h-9 border mt-2 px-2 sm:h-7" type="text">
+                <label class="font-semibold mt-4 sm:text-sm">رمز عبور:</label>
+                <input class="w-full h-9 border mt-2 px-2 sm:h-7" type="password">
+                <div class="flex w-full justify-between text-sm mt-4 mx-2 sm:flex-col sm:text-xs">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">مرا بخاطر بسپار</label>
+                    </div>
+                    <div class="underline ml-4 text-red-600 sm:mt-2">فراموشی رمز عبور</div>
+                </div>
+                <button class="bg-blue-500 text-white w-full mx-auto mt-10 py-2 hover:bg-blue-400 sm:text-sm">وارد
+                    شوید</button>
+                <button class="flex justify-center items-center border w-full mx-auto mt-4 py-2 hover:bg-blue-100">
+                    <div class="sm:text-xs">با حساب گوگل وارد شوید</div>
+                    <img class="w-5 h-5 mr-2 sm:w-4 sm:h-4" src="./assets/img/google-color-icon.png" alt="google">
+                </button>
+                <div class="text-sm mx-auto mt-20 sm:text-xs sm:mt-12">حساب کاربری ندارید؟<span
+                        class="mr-2 text-gray-500">ثبت نام
+                        کنید</span></div>
+            </div>
+        </div>
+
+        <!-- login image -->
+        <div class="basis-2/4 md:hidden">
+            <img class="h-full" src="./assets/img/Login.jpg" alt="Login">
+        </div>
+    </div>
+</body>
+
+</html>

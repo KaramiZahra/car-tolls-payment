@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <!-- icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xl: { "max": '1200px' },
+                    lg: { "max": '992px' },
+                    md: { "max": '768px' },
+                    sm: { "max": '576px' },
+                },
+                extend: {}
+            }
+        }
+    </script>
+    <style>
+        @layer base {
+            @font-face {
+                font-family: "Gandom";
+                src: url(./assets/font/Gandom.woff) format("woff"),
+                    url(./assets/font/Gandom.ttf) format("ttf"),
+                    url(./assets/font/Gandom.eot) format("eot"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.woff) format("woff"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.ttf) format("ttf"),
+                    url(./assets/font/Farsi-Digits/Gandom-FD.eot) format("eot");
+            }
+        }
+
+        @layer utilities {
+            .font-gandom {
+                font-family: "Gandom", sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-gandom bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold mb-8 text-center text-blue-500">اطلاعات کاربر و خودرو</h1>
+
+        <!-- car info -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-blue-500">
+            <h2 class="text-2xl font-semibold mb-6 text-blue-500 flex items-center">
+                <i class="fas fa-car mr-2"></i>
+                اطلاعات خودرو
+            </h2>
+            <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">کد یکتا:</p>
+                    <p class="text-lg">125877</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">کد ۱۷ رقمی:</p>
+                    <p class="text-lg">IRWZ94R22N5026866</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره موتور:</p>
+                    <p class="text-lg">mvm477fjaf034866</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره شاسی:</p>
+                    <p class="text-lg">naftbamd1f1026866</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره پلاک:</p>
+                    <p class="text-lg">72 ه 116 - 38</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شهر پلاک گذاری:</p>
+                    <p class="text-lg">البرز</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تاریخ پلاک بندی:</p>
+                    <p class="text-lg">1394</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تاریخ شماره گذاری:</p>
+                    <p class="text-lg">1394/01/01</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">نوع پلاک:</p>
+                    <p class="text-lg">شخصی</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">سیستم:</p>
+                    <p class="text-lg">mvm</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تیپ:</p>
+                    <p class="text-lg">MVM 315H</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">رنگ:</p>
+                    <p class="text-lg">مشکی</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">سوخت:</p>
+                    <p class="text-lg">بنزین</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">کاربری:</p>
+                    <p class="text-lg">سواری</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">مدل:</p>
+                    <p class="text-lg">1394</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تعداد سیلندر:</p>
+                    <p class="text-lg">4</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">وضعیت:</p>
+                    <p class="text-lg">فعال</p>
+                </div>
+            </div>
+            <div class="mt-6 bg-gray-50 p-4 rounded-lg">
+                <p class="font-semibold text-gray-500">توضیحات:</p>
+                <p class="text-lg">خودرو در وضعیت خوبی قرار دارد.</p>
+            </div>
+        </div>
+
+        <!-- owner info -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-gray-500">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-500 flex items-center">
+                <i class="fas fa-user mr-2"></i>
+                اطلاعات مالک خودرو
+            </h2>
+            <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">نام و نام خانوادگی:</p>
+                    <p class="text-lg">آرمان نامجو</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">کد ملی:</p>
+                    <p class="text-lg">0310316553</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره موبایل:</p>
+                    <p class="text-lg">09129413546</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره تلفن:</p>
+                    <p class="text-lg">023-28475698</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">آدرس:</p>
+                    <p class="text-lg">البرز، کرج، هفته تیر</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- car toll info -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-blue-500">
+            <h2 class="text-2xl font-semibold mb-6 text-blue-500 flex items-center">
+                <i class="fas fa-receipt mr-2"></i>
+                اطلاعات عوارضی خودرو
+            </h2>
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-gray-500">تعداد فیش خودرو:</p>
+                    <p class="text-lg">2</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-gray-500">تعداد مفاصا:</p>
+                    <p class="text-lg">1</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                    <p class="font-semibold text-gray-500">بدهی خودرو:</p>
+                    <p class="text-lg">1,500,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- latest car receipt info -->
+        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-500">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-500 flex items-center">
+                <i class="fas fa-file-invoice mr-2"></i>
+                اطلاعات آخرین فیش خودرو
+            </h2>
+            <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">سریال فیش:</p>
+                    <p class="text-lg">2339752</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شماره فیش روی کاغذ:</p>
+                    <p class="text-lg">000302339752</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">مبلغ:</p>
+                    <p class="text-lg">26,197,000</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شعبه:</p>
+                    <p class="text-lg">شهر - مرکز</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">نوع پرداخت:</p>
+                    <p class="text-lg">پرداخت با پوز</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">سال پرداخت:</p>
+                    <p class="text-lg">1403</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">وضعیت:</p>
+                    <p class="text-lg">تایید شده</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تاریخ پرداخت:</p>
+                    <p class="text-lg">1403/02/10</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">تاریخ صدور:</p>
+                    <p class="text-lg">1403/02/10</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شناسه قبض:</p>
+                    <p class="text-lg">2233975244573</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">شناسه پرداخت:</p>
+                    <p class="text-lg">2619703095</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold text-gray-500">ایجاد کننده:</p>
+                    <p class="text-lg">261129</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
