@@ -17,6 +17,7 @@
                     lg: { "max": '992px' },
                     md: { "max": '768px' },
                     sm: { "max": '576px' },
+                    xs: { "max": '320px' },
                 },
                 extend: {}
             }
@@ -46,36 +47,36 @@
 <body class="font-gandom bg-gray-100 relative">
     <div class="fixed bg-gradient-to-r from-blue-500 to-gray-500 w-full h-20 flex items-center">
         <!-- open menu -->
-        <div class="open-menu-icon w-10 h-10 mr-5 hover:cursor-pointer">
+        <div class="open-menu-icon w-8 h-8 mr-5 hover:cursor-pointer">
             <img class="w-full h-full" src="./assets/img/menu-white.png" alt="menu">
         </div>
-        <h1 class="text-white text-xl font-bold mr-3">سامانه پرداخت عوارضی خودرو</h1>
+        <h1 class="text-white text-lg font-bold mr-3">سامانه پرداخت عوارضی خودرو</h1>
     </div>
     <div class="menu fixed bottom-0 top-0 -right-72 bg-blue-500 w-72 h-screen transition-all duration-500">
         <!-- close menu -->
-        <div class="close-menu-icon w-7 h-7 m-5 hover:cursor-pointer">
+        <div class="close-menu-icon w-4 h-4 m-5 hover:cursor-pointer">
             <img class="w-full h-full" src="./assets/img/close.png" alt="menu">
         </div>
         <!-- menu content -->
         <ul>
-            <li class="flex items-center text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+            <li class="flex items-center text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <i class="fa-solid fa-car"></i>
                 <p class="mr-2">خودرو</p>
             </li>
-            <li class="flex items-center text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+            <li class="flex items-center text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <i class="fa-solid fa-circle-info"></i>
                 <p class="mr-2">اطلاعات عوارضی خودرو</p>
             </li>
-            <li class="flex items-center text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+            <li class="flex items-center text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <i class="fa-solid fa-circle-info"></i>
                 <p class="mr-2">اطلاعات پایه خودرو</p>
             </li>
-            <li class="flex items-center text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+            <li class="flex items-center text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <i class="fa-solid fa-user"></i>
                 <p class="mr-2">کاربران</p>
             </li>
             <li
-                class="report flex items-center justify-between text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+                class="report flex items-center justify-between text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <div class="flex items-center">
                     <i class="fa-solid fa-file"></i>
                     <p class="mr-2">گزارشات</p>
@@ -83,207 +84,210 @@
                 <i class="fa-solid fa-caret-left text-xl ml-2"></i>
             </li>
             <ul class="submenu text-white hidden">
-                <li class="py-2 pr-10 hover:bg-blue-400 hover:cursor-pointer">گزارشات دفاتر پیشخوان</li>
-                <li class="py-2 pr-10 hover:bg-blue-400 hover:cursor-pointer">گزارشات پرتال</li>
-                <li class="py-2 pr-10 hover:bg-blue-400 hover:cursor-pointer">گزارشات شهرداری</li>
+                <li class="py-2 pr-10 text-sm hover:bg-blue-400 hover:cursor-pointer">گزارشات دفاتر پیشخوان</li>
+                <li class="py-2 pr-10 text-sm hover:bg-blue-400 hover:cursor-pointer">گزارشات پرتال</li>
+                <li class="py-2 pr-10 text-sm hover:bg-blue-400 hover:cursor-pointer">گزارشات شهرداری</li>
             </ul>
-            <li class="flex items-center text-white text-lg py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
+            <li class="flex items-center text-white text-md py-3 px-5 hover:bg-blue-400 hover:cursor-pointer">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <p class="mr-2">استعلام شهرداری</p>
             </li>
         </ul>
     </div>
     <div class="container mx-auto p-4">
-        <h1 class="text-4xl font-bold mb-8 text-center text-blue-500 mt-20">اطلاعات کاربر و خودرو</h1>
+        <h1 class="text-2xl font-bold mb-8 text-center text-blue-500 mt-20">اطلاعات کاربر و خودرو</h1>
 
         <!-- car info -->
         <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-blue-500">
-            <h2 class="text-2xl font-semibold mb-6 text-blue-500 flex items-center">
+            <h2 class="text-xl font-semibold mb-6 text-blue-500 flex items-center">
                 <i class="fas fa-car mr-2"></i>
                 اطلاعات خودرو
             </h2>
-            <div class="grid grid-cols-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+            <div
+                class="grid grid-cols-8 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 sm:gap-1 gap-6 text-xs">
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">کد یکتا:</p>
-                    <p class="text-lg">۱۲۵۸۹۷</p>
+                    <p class="font-semibold text-gray-500 mb-1">کد یکتا:</p>
+                    <p>۱۲۵۸۹۷</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">کد ۱۷ رقمی:</p>
-                    <p class="text-lg">IRWZ۹۴R۲۲N۵۰۲۶۸۶۶</p>
+                    <p class="font-semibold text-gray-500 mb-1">کد ۱۷ رقمی:</p>
+                    <p>IRWZ۹۴R۲۲N۵۰۲۶۸۶۶</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره موتور:</p>
-                    <p class="text-lg">mvm۴۷۷fjaf۰۳۴۸۶۶</p>
+                    <p class="font-semibold text-gray-500 mb-1">شماره موتور:</p>
+                    <p>mvm۴۷۷fjaf۰۳۴۸۶۶</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره شاسی:</p>
-                    <p class="text-lg">naftbamd۱f۱۰۲۶۸۶۶</p>
+                    <p class="font-semibold text-gray-500 mb-1">شماره شاسی:</p>
+                    <p>naftbamd۱f۱۰۲۶۸۶۶</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره پلاک:</p>
-                    <p class="text-lg">۷۲ ه ۱۱۶ - ۳۸</p>
+                    <p class="font-semibold text-gray-500 mb-1">شماره پلاک:</p>
+                    <p>۳۸ - ۱۱۶ ه ۷۲</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شهر پلاک گذاری:</p>
-                    <p class="text-lg">البرز</p>
+                    <p class="font-semibold text-gray-500 mb-1">شهر پلاک گذاری:</p>
+                    <p>البرز</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تاریخ پلاک بندی:</p>
-                    <p class="text-lg">۱۳۹۴</p>
+                    <p class="font-semibold text-gray-500 mb-1">تاریخ پلاک بندی:</p>
+                    <p>۱۳۹۴</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تاریخ شماره گذاری:</p>
-                    <p class="text-lg">۱۳۹۴/۰۱/۰۱</p>
+                    <p class="font-semibold text-gray-500 mb-1">تاریخ شماره گذاری:</p>
+                    <p>۱۳۹۴/۰۱/۰۱</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">نوع پلاک:</p>
-                    <p class="text-lg">شخصی</p>
+                    <p class="font-semibold text-gray-500 mb-1">نوع پلاک:</p>
+                    <p>شخصی</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">سیستم:</p>
-                    <p class="text-lg">mvm</p>
+                    <p class="font-semibold text-gray-500 mb-1">سیستم:</p>
+                    <p>mvm</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تیپ:</p>
-                    <p class="text-lg">MVM ۳۱۵H</p>
+                    <p class="font-semibold text-gray-500 mb-1">تیپ:</p>
+                    <p>MVM ۳۱۵H</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">رنگ:</p>
-                    <p class="text-lg">مشکی</p>
+                    <p class="font-semibold text-gray-500 mb-1">رنگ:</p>
+                    <p>مشکی</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">سوخت:</p>
-                    <p class="text-lg">بنزین</p>
+                    <p class="font-semibold text-gray-500 mb-1">سوخت:</p>
+                    <p>بنزین</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">کاربری:</p>
-                    <p class="text-lg">سواری</p>
+                    <p class="font-semibold text-gray-500 mb-1">کاربری:</p>
+                    <p>سواری</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">مدل:</p>
-                    <p class="text-lg">۱۳۹۴</p>
+                    <p class="font-semibold text-gray-500 mb-1">مدل:</p>
+                    <p>۱۳۹۴</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تعداد سیلندر:</p>
-                    <p class="text-lg">۴</p>
+                    <p class="font-semibold text-gray-500 mb-1">تعداد سیلندر:</p>
+                    <p>۴</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">وضعیت:</p>
-                    <p class="text-lg">فعال</p>
+                    <p class="font-semibold text-gray-500 mb-1">وضعیت:</p>
+                    <p>فعال</p>
                 </div>
-            </div>
-            <div class="mt-6 bg-gray-50 p-4 rounded-lg">
-                <p class="font-semibold text-gray-500">توضیحات:</p>
-                <p class="text-lg">خودرو در وضعیت خوبی قرار دارد.</p>
-            </div>
-        </div>
-
-        <!-- owner info -->
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-gray-500">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-500 flex items-center">
-                <i class="fas fa-user mr-2"></i>
-                اطلاعات مالک خودرو
-            </h2>
-            <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">نام و نام خانوادگی:</p>
-                    <p class="text-lg">آرمان نامجو</p>
+                <div class="bg-gray-50 p-4 rounded-lg col-span-3 sm:col-span-1">
+                    <p class="font-semibold text-gray-500 mb-1">توضیحات:</p>
+                    <p>خودرو در وضعیت خوبی قرار دارد.</p>
                 </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">کد ملی:</p>
-                    <p class="text-lg">۰۳۱۰۳۱۶۵۵۳</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره موبایل:</p>
-                    <p class="text-lg">۰۹۱۲۹۴۱۳۵۴۶</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره تلفن:</p>
-                    <p class="text-lg">۰۲۳-۲۸۴۷۵۶۹۸</p>
-                </div>
-            </div>
-            <div class="bg-gray-50 p-4 rounded-lg mt-6">
-                <p class="font-semibold text-gray-500">آدرس:</p>
-                <p class="text-lg">البرز، کرج، هفته تیر</p>
             </div>
         </div>
 
-        <!-- car toll info -->
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-blue-500">
-            <h2 class="text-2xl font-semibold mb-6 text-blue-500 flex items-center">
-                <i class="fas fa-receipt mr-2"></i>
-                اطلاعات عوارضی خودرو
-            </h2>
-            <div class="grid grid-cols-3 md:grid-cols-1 gap-6">
-                <div class="bg-gray-50 p-4 rounded-lg text-center">
-                    <p class="font-semibold text-gray-500">تعداد فیش خودرو:</p>
-                    <p class="text-lg">۲</p>
+        <div class="grid grid-cols-3 gap-6 lg:grid-cols-1 lg:gap-0">
+            <!-- owner info -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-gray-500 text-xs col-span-2">
+                <h2 class="text-xl font-semibold mb-6 text-gray-500 flex items-center">
+                    <i class="fas fa-user mr-2"></i>
+                    اطلاعات مالک خودرو
+                </h2>
+                <div class="grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-500 mb-1">نام و نام خانوادگی:</p>
+                        <p>آرمان نامجو</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-500 mb-1">کد ملی:</p>
+                        <p>۰۳۱۰۳۱۶۵۵۳</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-500 mb-1">شماره موبایل:</p>
+                        <p>۰۹۱۲۹۴۱۳۵۴۶</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-500 mb-1">شماره تلفن:</p>
+                        <p>۰۲۳-۲۸۴۷۵۶۹۸</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg md:col-span-2">
+                        <p class="font-semibold text-gray-500 mb-1">آدرس:</p>
+                        <p>البرز، کرج، هفته تیر</p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-4 rounded-lg text-center">
-                    <p class="font-semibold text-gray-500">تعداد مفاصا:</p>
-                    <p class="text-lg">۱</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg text-center">
-                    <p class="font-semibold text-gray-500">بدهی خودرو:</p>
-                    <p class="text-lg">۱،۵۰۰،۰۰۰</p>
+            </div>
+
+            <!-- car toll info -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8 border-t-4 border-blue-500 text-xs">
+                <h2 class="text-xl font-semibold mb-6 text-blue-500 flex items-center">
+                    <i class="fas fa-receipt mr-2"></i>
+                    اطلاعات عوارضی خودرو
+                </h2>
+                <div class="grid grid-cols-3 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <p class="font-semibold text-gray-500 mb-1">فیش خودرو:</p>
+                        <p>۲</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <p class="font-semibold text-gray-500 mb-1">تعداد مفاصا:</p>
+                        <p>۱</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <p class="font-semibold text-gray-500 mb-1">بدهی خودرو:</p>
+                        <p>۱۵۰،۰۰۰</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- latest car receipt info -->
-        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-500">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-500 flex items-center">
+        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-500 text-xs">
+            <h2 class="text-xl font-semibold mb-6 text-gray-500 flex items-center">
                 <i class="fas fa-file-invoice mr-2"></i>
                 اطلاعات آخرین فیش خودرو
             </h2>
-            <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
+            <div class="grid grid-cols-9 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-6">
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">سریال فیش:</p>
-                    <p class="text-lg">۲۳۳۹۷۵۲</p>
+                    <p class="font-semibold text-gray-500 mb-1">سریال فیش:</p>
+                    <p>۲۳۳۹۷۵۲</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شماره فیش روی کاغذ:</p>
-                    <p class="text-lg">۰۰۰۳۰۲۳۳۹۷۵۲</p>
+                    <p class="font-semibold text-gray-500 mb-1">شماره فیش روی کاغذ:</p>
+                    <p>۰۰۰۳۰۲۳۳۹۷۵۲</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">مبلغ:</p>
-                    <p class="text-lg">۲۶،۱۹۷،۰۰۰</p>
+                    <p class="font-semibold text-gray-500 mb-1">مبلغ:</p>
+                    <p>۲۶،۱۹۷،۰۰۰</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شعبه:</p>
-                    <p class="text-lg">شهر - مرکز</p>
+                    <p class="font-semibold text-gray-500 mb-1">شعبه:</p>
+                    <p>شهر - مرکز</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">نوع پرداخت:</p>
-                    <p class="text-lg">پرداخت با پوز</p>
+                    <p class="font-semibold text-gray-500 mb-1">نوع پرداخت:</p>
+                    <p>پرداخت با پوز</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">سال پرداخت:</p>
-                    <p class="text-lg">۱۴۰۳</p>
+                    <p class="font-semibold text-gray-500 mb-1">سال پرداخت:</p>
+                    <p>۱۴۰۳</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">وضعیت:</p>
-                    <p class="text-lg">تایید شده</p>
+                    <p class="font-semibold text-gray-500 mb-1">وضعیت:</p>
+                    <p>تایید شده</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تاریخ پرداخت:</p>
-                    <p class="text-lg">۱۴۰۳/۰۲/۱۰</p>
+                    <p class="font-semibold text-gray-500 mb-1">تاریخ پرداخت:</p>
+                    <p>۱۴۰۳/۰۲/۱۰</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">تاریخ صدور:</p>
-                    <p class="text-lg">۱۴۰۳/۰۲/۱۰</p>
+                    <p class="font-semibold text-gray-500 mb-1">تاریخ صدور:</p>
+                    <p>۱۴۰۳/۰۲/۱۰</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شناسه قبض:</p>
-                    <p class="text-lg">۲۲۳۳۹۷۵۲۴۴۵۷۳</p>
+                    <p class="font-semibold text-gray-500 mb-1">شناسه قبض:</p>
+                    <p>۲۲۳۳۹۷۵۲۴۴۵۷۳</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">شناسه پرداخت:</p>
-                    <p class="text-lg">۲۶۱۹۷۰۳۰۹۵</p>
+                    <p class="font-semibold text-gray-500 mb-1">شناسه پرداخت:</p>
+                    <p>۲۶۱۹۷۰۳۰۹۵</p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold text-gray-500">ایجاد کننده:</p>
-                    <p class="text-lg">۲۶۱۱۲۹</p>
+                    <p class="font-semibold text-gray-500 mb-1">ایجاد کننده:</p>
+                    <p>۲۶۱۱۲۹</p>
                 </div>
             </div>
         </div>
